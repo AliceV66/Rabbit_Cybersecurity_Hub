@@ -60,21 +60,7 @@ Git & GitHub
 
 Para el control de versiones y el despliegue a través de GitHub Pages.
 
-### Arquitectura del Directorio
-El proyecto sigue una estructura de archivos lógica y organizada para facilitar el mantenimiento y la escalabilidad.
 
-/
-├── index.html             (Página de Inicio)
-├── amenazas.html          (Página de Amenazas)
-├── consejos.html          (Página de Consejos)
-├── README.md              (Esta documentación)
-└── assets/
-    ├── css/
-    │   └── style.css      (Estilos personalizados)
-    ├── js/
-    │   └── main.js        (Lógica JavaScript/jQuery)
-    └── img/
-        └── (Imágenes y recursos visuales)
 ## Autor
 Leon11
 
