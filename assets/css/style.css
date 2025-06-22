@@ -1,0 +1,142 @@
+/* assets/css/style.css */
+
+/* --- Variables y Estilos Globales --- */
+:root {
+    --cyber-dark: #0a041a;
+    --cyber-bg: #111;
+    --cyber-primary: #00f6ff; /* Cian */
+    --cyber-secondary: #ff00ff; /* Magenta */
+    --cyber-success: #39ff14; /* Verde Lima */
+    --cyber-text: #e0e0e0;
+    --font-heading: 'Share Tech Mono', monospace;
+    --font-body: 'Source Code Pro', monospace;
+}
+
+body {
+    background-color: var(--cyber-dark);
+    color: var(--cyber-text);
+    font-family: var(--font-body);
+    background-image: linear-gradient(rgba(13, 2, 26, 0.95), rgba(13, 2, 26, 0.95)), url('https://www.transparenttextures.com/patterns/carbon-fibre-v2.png');
+}
+
+.section-title {
+    font-family: var(--font-heading);
+    color: var(--cyber-primary);
+    text-shadow: 0 0 5px var(--cyber-primary);
+}
+
+.bg-dark-transparent {
+    background-color: rgba(10, 10, 10, 0.7);
+    backdrop-filter: blur(5px);
+}
+
+/* --- Efecto Glitch --- */
+.glitch-text {
+    position: relative;
+    font-family: var(--font-heading);
+    color: var(--cyber-primary);
+    text-shadow: 0 0 2px var(--cyber-primary);
+    animation: glitch 3s infinite;
+}
+
+@keyframes glitch {
+    0%, 100% { text-shadow: -1.5px -1.5px 0 var(--cyber-secondary), 1.5px 1.5px 0 var(--cyber-success); }
+    25% { text-shadow: 1.5px 1.5px 0 var(--cyber-secondary), -1.5px -1.5px 0 var(--cyber-success); }
+    50% { text-shadow: 1.5px -1.5px 0 var(--cyber-secondary), -1.5px 1.5px 0 var(--cyber-success); }
+    75% { text-shadow: -1.5px 1.5px 0 var(--cyber-secondary), 1.5px -1.5px 0 var(--cyber-success); }
+}
+
+/* --- Componentes --- */
+.hero-section {
+    min-height: 70vh;
+    background-size: cover;
+    background-position: center;
+    border-bottom: 2px solid var(--cyber-primary);
+}
+
+.btn-primary-cyber {
+    background-color: transparent;
+    border: 2px solid var(--cyber-primary);
+    color: var(--cyber-primary);
+    font-family: var(--font-heading);
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+    text-shadow: 0 0 5px var(--cyber-primary);
+}
+
+.btn-primary-cyber:hover {
+    background-color: var(--cyber-primary);
+    color: var(--cyber-dark);
+    box-shadow: 0 0 20px var(--cyber-primary);
+}
+
+.cyber-card {
+    border: 1px solid var(--cyber-secondary);
+    padding: 20px;
+    height: 100%;
+    transition: all 0.3s ease;
+}
+
+.cyber-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 15px var(--cyber-secondary);
+}
+
+.card-title-cyber {
+    color: var(--cyber-secondary);
+    font-family: var(--font-heading);
+}
+
+.accordion-cyber .accordion-item {
+    background-color: var(--cyber-dark);
+    border: 1px solid var(--cyber-primary);
+}
+
+.accordion-cyber .accordion-button {
+    background-color: #1a1a1a;
+    color: var(--cyber-primary);
+    font-family: var(--font-heading);
+}
+
+.accordion-cyber .accordion-button:not(.collapsed) {
+    background-color: var(--cyber-primary);
+    color: var(--cyber-dark);
+}
+
+.accordion-cyber .accordion-body {
+    background-color: #111;
+}
+
+.terminal-window {
+    border: 1px solid var(--cyber-success);
+    background-color: #000;
+    padding: 15px;
+    border-radius: 5px;
+}
+.terminal-header { color: var(--cyber-success); }
+.terminal-body p { margin: 2px 0; font-size: 0.9em; }
+
+.form-control {
+    background-color: #1a1a1a;
+    border: 1px solid var(--cyber-secondary);
+    color: var(--cyber-text);
+}
+.form-control:focus {
+    background-color: #1a1a1a;
+    border-color: var(--cyber-primary);
+    box-shadow: 0 0 10px var(--cyber-primary);
+    color: var(--cyber-text);
+}
+
+.cyber-modal .modal-content {
+    background-color: var(--cyber-dark);
+    border: 1px solid var(--cyber-primary);
+}
+
+.cyber-modal .modal-body {
+    color: var(--cyber-text);
+}
+
+.cyber-modal .form-check-label {
+    color: var(--cyber-text);
+}
