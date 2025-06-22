@@ -76,7 +76,7 @@ El proyecto sigue una estructura de archivos lógica y organizada para facilitar
     └── img/
         └── (Imágenes y recursos visuales)
 ## Autor
-[Tu Nombre] - Tu GitHub
+Leon11
 
 ## Licencia
 Este proyecto está bajo la Licencia MIT.
